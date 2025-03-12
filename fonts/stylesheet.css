@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'ChaletComprime-CologneEighty';
+    src: url('ChaletComprime-CologneEighty.eot');
+    src: local('ChaletComprime-CologneEighty'),
+        url('ChaletComprime-CologneEighty.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-CologneEighty.woff2') format('woff2'),
+        url('ChaletComprime-CologneEighty.woff') format('woff'),
+        url('ChaletComprime-CologneEighty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-HongKongEighty';
+    src: url('ChaletComprime-HongKongEighty.eot');
+    src: local('ChaletComprime-HongKongEighty'),
+        url('ChaletComprime-HongKongEighty.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-HongKongEighty.woff2') format('woff2'),
+        url('ChaletComprime-HongKongEighty.woff') format('woff'),
+        url('ChaletComprime-HongKongEighty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-MilanSeventy';
+    src: url('ChaletComprime-MilanSeventy.eot');
+    src: local('ChaletComprime-MilanSeventy'),
+        url('ChaletComprime-MilanSeventy.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-MilanSeventy.woff2') format('woff2'),
+        url('ChaletComprime-MilanSeventy.woff') format('woff'),
+        url('ChaletComprime-MilanSeventy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-CologneSixty';
+    src: url('ChaletComprime-CologneSixty.eot');
+    src: local('ChaletComprime-CologneSixty'),
+        url('ChaletComprime-CologneSixty.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-CologneSixty.woff2') format('woff2'),
+        url('ChaletComprime-CologneSixty.woff') format('woff'),
+        url('ChaletComprime-CologneSixty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-LosAngeles';
+    src: url('ChaletComprime-LosAngeles.eot');
+    src: local('ChaletComprime-LosAngeles'),
+        url('ChaletComprime-LosAngeles.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-LosAngeles.woff2') format('woff2'),
+        url('ChaletComprime-LosAngeles.woff') format('woff'),
+        url('ChaletComprime-LosAngeles.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-HongKongSeventy';
+    src: url('ChaletComprime-HongKongSeventy.eot');
+    src: local('ChaletComprime-HongKongSeventy'),
+        url('ChaletComprime-HongKongSeventy.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-HongKongSeventy.woff2') format('woff2'),
+        url('ChaletComprime-HongKongSeventy.woff') format('woff'),
+        url('ChaletComprime-HongKongSeventy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-MilanEighty';
+    src: url('ChaletComprime-MilanEighty.eot');
+    src: local('ChaletComprime-MilanEighty'),
+        url('ChaletComprime-MilanEighty.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-MilanEighty.woff2') format('woff2'),
+        url('ChaletComprime-MilanEighty.woff') format('woff'),
+        url('ChaletComprime-MilanEighty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-HongKongSixty';
+    src: url('ChaletComprime-HongKongSixty.eot');
+    src: local('ChaletComprime-HongKongSixty'),
+        url('ChaletComprime-HongKongSixty.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-HongKongSixty.woff2') format('woff2'),
+        url('ChaletComprime-HongKongSixty.woff') format('woff'),
+        url('ChaletComprime-HongKongSixty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-CologneSeventy';
+    src: url('ChaletComprime-CologneSeventy.eot');
+    src: local('ChaletComprime-CologneSeventy'),
+        url('ChaletComprime-CologneSeventy.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-CologneSeventy.woff2') format('woff2'),
+        url('ChaletComprime-CologneSeventy.woff') format('woff'),
+        url('ChaletComprime-CologneSeventy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChaletComprime-MilanSixty';
+    src: url('ChaletComprime-MilanSixty.eot');
+    src: local('ChaletComprime-MilanSixty'),
+        url('ChaletComprime-MilanSixty.eot?#iefix') format('embedded-opentype'),
+        url('ChaletComprime-MilanSixty.woff2') format('woff2'),
+        url('ChaletComprime-MilanSixty.woff') format('woff'),
+        url('ChaletComprime-MilanSixty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

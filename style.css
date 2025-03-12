@@ -1,0 +1,108 @@
+
+@font-face {
+	font-family: 'HongKongSixty'; 
+	src: url('fonts/ChaletComprime-HongKongSixty.ttf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'CologneSixty'; 
+	src: url('fonts/ChaletComprime-CologneSixty.ttf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url("images/fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.cont {
+    backdrop-filter: blur(4px);
+    background: rgba(70, 70, 70, 0.308);
+    min-height: 100vh;
+}
+h1 {
+    font-family: "HongKongSixty";
+    font-weight: 400;
+    font-size: 48px;
+    color: #fff;
+}
+li {
+    font-family: "CologneSixty";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 15px;
+}
+.jend {
+    justify-content: flex-end;
+}
+.menu {
+    border-left: 1px solid rgba(188, 187, 187, 0.6);
+    
+}
+.logoStaiton {
+    width: 28px;
+    height: 28px;
+}
+a {
+    font-family: "CologneSixty";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff!important;
+}
+a:hover {
+    color: #f5c550!important;
+}
+.staison {
+    border-right: 1px solid rgba(188, 187, 187, 0.6);
+}
+.composition {
+    border-bottom: 1px solid rgba(188, 187, 187, 0.6);
+    border-top: 1px solid rgba(188, 187, 187, 0);
+    border-left: 1px solid rgba(188, 187, 187, 0);
+    border-right: 1px solid rgba(188, 187, 187, 0);
+}
+.music .composition:hover {
+    border: 1px solid #f5c550;
+    background: rgba(40, 40, 40, 0.6);
+}
+.music p {
+    
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff!important;
+}
+.music {
+    overflow-x: hidden; /* прокрутка по горизонтали */
+overflow-y: scroll; /* прокрутка по вертикали */
+max-height: 60vh;
+}
+.music::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+  }
+  .music::-webkit-scrollbar-track {
+    background: rgba(188, 187, 187, 0.6);        /* цвет дорожки */
+  }
+  .music::-webkit-scrollbar-thumb {
+    background-color: #f5c550;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 1px solid rgba(188, 187, 187, 0.6);  /* padding вокруг плашки */
+  }
+.bottomplayer {
+    position: absolute;
+    bottom: 0; /* Цепляем к нижней границе */
+    width: 100%;
+    
+}
+span {
+    font-family: "CologneSixty";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff!important;
+}
+.playerControler {
+    background: rgba(40, 40, 40, 0.6);
+}
