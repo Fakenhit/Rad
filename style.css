@@ -65,9 +65,20 @@ a:hover {
     border-left: 1px solid rgba(188, 187, 187, 0);
     border-right: 1px solid rgba(188, 187, 187, 0);
 }
-.music .composition:hover {
+/* .music .composition:hover {
     border: 1px solid #f5c550;
     background: rgba(40, 40, 40, 0.6);
+} */
+.hov:hover {
+    border: 1px solid #f5c550;
+    background: rgba(40, 40, 40, 0.6);
+}
+.music .active {
+    background-color: #f5c550;
+    color: #fff;
+}
+.music .active a:hover {
+    color: #fff!important;
 }
 .music p {
     

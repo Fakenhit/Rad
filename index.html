@@ -26,95 +26,37 @@
             <div class="row pt-5 ">
                 <div class="col-sm-3 staison">
                     <div class="row">
-                        <div class="col-8"><a>Radio Los Santos</a></div>
+                        <div class="col-8"><a onclick="list(Radio_Los_Santos);">Radio Los Santos</a></div>
                         <div class="col-4">
                             <img src="images/logo/Radio-Los-Santos-V.webp" class="logoStaiton" alt="">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-8"><a>Space 103.2</a></div>
+                        <div class="col-8"><a onclick="list(Space);">Space 103.2</a></div>
                         <div class="col-4">
                             <img src="images/logo/Space-official.webp" class="logoStaiton" alt="">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-8"><a>West Coast Classics</a></div>
+                        <div class="col-8"><a onclick="list(West_Coast_Classics);">West Coast Classics</a></div>
                         <div class="col-4">
                             <img src="images/logo/West-coast-classics.webp" class="logoStaiton" alt="">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-8"><a>Rebel Radio</a></div>
+                        <div class="col-8"><a onclick="list(Rebel_Radio);">Rebel Radio</a></div>
                         <div class="col-4">
                             <img src="images/logo/Rebel-radio.webp" class="logoStaiton" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-9 music" id="music">
+                <div class="col-sm-9 music">
                     <div class="row">
                         <div class="col-12"><p>Радиостанция современной рэп-музыки. Ведущий: Биг Бой</p></div>
                     </div>
-                    <!-- <div class="row mt-1">
-                        <div class="col-12 composition mx-5">
-                            <a>YG — I'm A Real 1 (2013)</a>
-                        </div>
+                    <div id="music">
+
                     </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div> <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col-12 composition mx-5"><a>YG — I'm A Real 1 (2013)</a></div>
-                    </div> -->
                     
                 </div>
             </div>
@@ -123,13 +65,13 @@
         <div class="container-fluid fixed-bottom playerControler d-none" id = "playerControler">
             <div class="row my-3">
                 <div class="col-2">
-                    <img src="images/pause.svg" height="50px">
+                    <img src="images/pause.svg" height="50px" id = "playstop">
                 </div>
                 
                 <div class="col-4 d-flex align-items-center">
                     <span id = "controllerName" class="align-middle">YG — I'm A Real 1 (2013)</span>
                 </div>
-                <div class="col-4 d-flex align-items-center"><span>0:23/3:22</span></div>
+                <div class="col-4 d-flex align-items-center"><span id="timePicker">0:23/3:22</span><span> | </span><span id="duration">/Из скольки то</span></div>
                 <div class="col-2"></div>
             </div>
         </div>
