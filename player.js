@@ -6,10 +6,42 @@ const audioPlayer =  document.getElementById("audioPlayer");
 const PlayerController = document.getElementById("playerControler");
 const playerControlerName = document.getElementById("controllerName");
 const timePicker = document.getElementById("timePicker");
+const rangeInput = document.getElementById('cowbell');
 
+let Current_album = West_Coast_Classics;
+let currentSongIndex = 0;
+
+
+
+let isSeeking = false; // Флаг для отслеживания взаимодействия с ползунком
+
+// Обновление времени и ползунка при воспроизведении
 audioPlayer.addEventListener('timeupdate', function () {
-    timePicker.innerHTML = secondsToTime(audioPlayer.currentTime);
+    if (!isSeeking) { // Обновляем ползунок только если пользователь не взаимодействует с ним
+        timePicker.innerHTML = secondsToTime(audioPlayer.currentTime);
+        rangeInput.value = audioPlayer.currentTime;
+        const value = rangeInput.value;
+        const max = rangeInput.max;
+        const percent = (value / max) * 100;
+        rangeInput.style.setProperty('--fill-percent', `${percent}%`);
+    }
 }, false);
+
+// Начало взаимодействия с ползунком
+rangeInput.addEventListener("mousedown", function () {
+    isSeeking = true; // Устанавливаем флаг в true
+});
+
+// Завершение взаимодействия с ползунком
+rangeInput.addEventListener("mouseup", function () {
+    isSeeking = false; // Сбрасываем флаг
+    audioPlayer.currentTime = rangeInput.value; // Устанавливаем текущее время аудио
+});
+
+// Перемотка при изменении ползунка (опционально)
+rangeInput.addEventListener("input", function () {
+    audioPlayer.currentTime = rangeInput.value;
+});
 
 function PlayStop() {
     if (audioPlayer.paused) {
@@ -29,7 +61,8 @@ function Bit(src, name) {
     
     if (!decodeURIComponent(audioPlayer.src.split('?')[0].split('#')[0]).endsWith(src)) {
         audioPlayer.src = src;
-        playerControlerName.innerText = name; 
+        playerControlerName.innerText = name;
+       
     }
     PlayStop();
 
@@ -54,6 +87,7 @@ function removeClassFromAll() {
 
 
 function list(radio) {
+    Current_album = radio;
     const music = document.getElementById("music");
     while(music.firstChild){
         music.removeChild(music.firstChild);
@@ -73,9 +107,10 @@ function list(radio) {
     }
 }
 
-list(West_Coast_Classics);
+list(Current_album); // Стандартный Вызов первого Альбома
 
 audioPlayer.addEventListener('loadedmetadata', function() {
+    rangeInput.max = audioPlayer.duration;
     const duration = audioPlayer.duration; // Длительность в секундах
     const formattedDuration = formatTime(duration); // Форматируем время
     document.getElementById('duration').textContent = formattedDuration;
@@ -118,6 +153,37 @@ function secondsToTime(time){
     }
     return fulltime;
 }
+
+
+
+
+
+rangeInput.addEventListener('input', () => {
+    const value = rangeInput.value;
+    const max = rangeInput.max;
+    const percent = (value / max) * 100;
+    rangeInput.style.setProperty('--fill-percent', `${percent}%`);
+});
+
+// Инициализация при загрузке страницы
+const initialValue = rangeInput.value;
+const max = rangeInput.max;
+const initialPercent = (initialValue / max) * 100;
+rangeInput.style.setProperty('--fill-percent', `${initialPercent}%`);
+
+
+
+// function nextSong() {
+//     currentSongIndex = (currentSongIndex + 1) % Current_album.length;
+//     if (currentSongIndex >= 0 && currentSongIndex < Current_album.length) {
+//         Bit(Current_album[currentSongIndex].src, Current_album[currentSongIndex].audioName);
+
+//         Current_album[currentSongIndex].src;
+//     }
+//     // playSong(currentSongIndex);
+// }
+// // Автоматическое переключение на следующую песню после окончания текущей
+// audioPlayer.addEventListener('ended', nextSong);
 
 
 
